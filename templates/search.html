@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Search</title>
+</head>
+<body>
+    <h1>Search for Student Profile</h1>
+    <form action="/search" method="POST">
+        <label for="reg_no">Registration Number:</label>
+        <input type="text" id="reg_no" name="reg_no" required pattern="\d{12}" title="Enter a valid 12-digit registration number">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
