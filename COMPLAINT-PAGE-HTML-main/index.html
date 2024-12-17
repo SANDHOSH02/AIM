@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FFS</title>
+    <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-logo">
+        
+    </div>
+    <h1>Feel Free To Share</h1>
+    <ul class="navbar-menu">    
+        <li class="dropdown">
+            <span class="transparent-button">Complaint</span>
+            <div class="dropdown-content">
+                <a href="#" onclick="openMaleModal()">Grievance Cell Complaint </a>
+                
+            </div>
+        </li>
+        <li class="dropdown">
+            <span class="transparent-button"></span>
+
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2>Welcome to the College Student Complaint Sharing Page</h2>
+    <p>If you have any concerns or issues regarding other students, faculty members, or any aspect of the college environment, you can use this platform to submit your complaint. Your message will be sent directly to the principal's email, and appropriate action will be taken promptly.</p>
+</div>
+
+<div class="modal" id="maleModal">
+    <div class="male-modal-content ">
+        <span class="close-male-modal" id="closeMaleModal">&times;</span>
+        <form id="maleForm" action="submit_form.php" method="post">
+
+        <form id="maleForm">
+           
+            <label for= "education" style="font-size:xx-large;"><b>EDUCATION</b></label><br><br>
+            <div class="gra">
+            <input type="radio" id="graduate" name=     "education" value="graduate">
+            <label for= "graduate">Graduate</label><br>
+            </div>
+            <input type="radio" id="undergraduate" name="education" value="undergraduate">
+            <label for= "undergraduate">Undergraduate</label><br>
+            <input type="radio" id="postgraduate" name= "education" value="postgraduate">
+            <label for= "postgraduate">Post Graduate</label><br><br>
+            
+            <label for="year">YEAR:</label><br>
+            <select id="year" class="male-input">
+                <option value="first-year">First Year</option>
+                <option value="second-year">Second Year</option>
+                <option value="third-year">Third Year</option>
+                <option value="final-year">Final Year</option>
+            </select><br>
+            
+            <label for="branch">BRANCH:</label><br>
+            <select id="branch" class="male-input">
+                <option value="civil">Civil Engineering</option>
+                <option value="computer-science">Computer Science and Engineering</option>
+                <option value="information technology">Information Technology</option>
+                <option value="artificial intelligence">Artificial Intelligence And Data science</option>
+                <option value="mechanical">mechanical</option>
+                <option value="electronics">Electronics and Communication Engineering</option>
+                
+            </select><br>
+            
+            <label for="name">NAME:</label><br>
+            <input type="text" id="name" class="male-input"><br>
+            
+            <label for="regNumber">REGISTER NUMBER:</label><br>
+            <input type="number" id="regNumber" class="male-input"><br>
+            
+            <label for="mobileNumber">MOBILE NUMBER:</label><br>
+            <input type="number" id="mobileNumber" class="male-input"><br>
+            
+            <label for="email">EMAIL ID:</label><br>
+            <input type="email" id="email" class="male-input"><br>
+            
+            <button type="button" class="male-submit-button" id="submitMaleComplaint">NEXT </button>
+        </form>
+    </div>
+</div>
+    
+
+<div class="next-card-container" id="nextCardContainer" style="display: none;">
+    <button class="transparent-button" id="nextCardButton">Next Card</button>
+</div>
+
+<div class="modal" id="maleModal">
+    <div class="male-modal-content">
+        <span class="close-male-modal" id="closeMaleModal">&times;</span>
+        <form id="maleForm">
+            
+        </form>
+    </div>
+</div>
+
+
+<div class="modal" id="grievancesModal">
+    <div class="grievances-modal-content">
+        <span class="close-grievances-modal" id="closeGrievancesModal">&times;</span>
+        <form id="grievancesForm">
+            
+            <label for="complaintType">Type of your Complaint:</label><br>
+            <select id="complaintType" class="grievances-input">
+                <option value="academic">Academic (Subject, staff, lab, Attendance, Exam, Coaching Class Etc.)</option>
+                <option value="hostelInfrastructure">Hostel Infrastructure (Water, Fan, Lights Etc.)</option>
+                <option value="messDining">Mess & Dining (Food, Snacks, Water Etc.)</option>
+                <option value="transportationRoutes">Transportation & Routes (Bus routes, Timing, Seating, Bus Pass Etc.)</option>
+                <option value="collegeInfrastructure">College Infrastructure (Fan, Light, Benches, Rest Rooms Etc.)</option>
+                <option value="canteenAmenities">Canteen & Student Amenities Stalls (Quality Cost, Time Etc.)</option>
+                <option value="valueAddedCourses">Value Added Courses (Special Courses, Placement Training Etc.)</option>
+                <option value="securityIssues">Security Issues (Found / Lost, Dangerous Situations Faced Etc.)</option>
+                <option value="raggingHarassment">Issues / Problem Regarding Ragging or Harassment</option>
+                <option value="appreciationsFeedbacks">Appreciations / Positive feedbacks</option>
+                <option value="others">Others (Suggestions or Ideas for Improvement of our College)</option>
+            </select><br><br>
+            <label for="grievanceText">Grievance / Request / Positive Feedback (Max 250 Char & Min 25 Char):</label><br>
+            <textarea id="grievanceText" class="grievances-input" rows="5" maxlength="250" minlength="25"></textarea><br><br>
+            <label for="solutionTime">When do you expect a solution?</label><br>
+            <select id="solutionTime" class="grievances-input">
+                <option value="withinDay">Within a day</option>
+                <option value="withinWeek">Within a week</option>
+                <option value="withinMonth">Within a month</option>
+                <option value="withinSemester">Within a semester</option>
+            </select><br><br>
+            <button type="button" class="grievances-submit-button" id="submitGrievancesComplaint">Submit</button>
+            <span class="close-grievances-modal" id="closeGrievancesModal">&times;</span>
+            
+
+
+        </form>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
