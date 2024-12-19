@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, rgb(10, 14, 18), rgb(18, 9, 31));
 }
 
 .img {
@@ -9,19 +10,42 @@ body {
     margin-top: 130px;
     margin-left: 690px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     position: relative;
+    
 }
 
 .inner-circle {
     width: 430px;
     height: 430px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.myimage {
+    width: 370px;
+    height: 370px; 
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+    object-fit: cover;
+    border: 1px solid #55efc4;
+    box-shadow: 0 0 10px #55efc4;
+    animation: glow 2s infinite;
+}
 
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #55efc4;
+    }
+    50% {
+        box-shadow: 0 0 20px #55efc4;
+    }
+    100% {
+        box-shadow: 0 0 10px #55efc4;
+    }
+}
