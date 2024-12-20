@@ -1,8 +1,21 @@
 body {
-    margin: 0;
-    padding: 0;
     background: linear-gradient(135deg, rgb(10, 14, 18), rgb(18, 9, 31));
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
 }
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .img {
     width: 450px;
@@ -59,18 +72,7 @@ body {
     transform: rotate(-14deg);
 }
 
-.python {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    width: 90px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 9px;
-    text-align: center;
-    margin-left: -89px;
-    margin-top: -10px;
-    backdrop-filter: blur(5px);
-}
+
 
 .label2 {
     width: 155px;
@@ -127,3 +129,4 @@ body {
         transform: translateX(-50%);
     }
 }
+
