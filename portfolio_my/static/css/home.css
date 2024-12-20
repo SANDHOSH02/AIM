@@ -130,3 +130,39 @@ body {
     }
 }
 
+/* nav */
+
+
+
+nav {
+    
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 10PX;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
