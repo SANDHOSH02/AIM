@@ -8,7 +8,7 @@ import { HiOutlineMoon } from "react-icons/hi2";
 
 function Header() {
   return (
-    <div>
+    <div className='flex items-center' >
       <img src={logo} width={60} height={60} />
       <div className='flex bg-stone-200 p-2 w-full items-center   ' >
       <HiMiniMagnifyingGlass />
