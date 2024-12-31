@@ -9,6 +9,7 @@ import { HiOutlineSun } from "react-icons/hi2";
 
 
 function Header() {
+  const [toggle,setToggle]
   return (
     <div className='flex items-center p-3 ' >
       <img src={logo} width={60} height={60} />
