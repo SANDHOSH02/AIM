@@ -10,7 +10,7 @@ function Header() {
   return (
     <div className='flex items-center' >
       <img src={logo} width={60} height={60} />
-      <div className='flex bg-stone-200 p-2 w-full items-center   ' >
+      <div className='flex bg-stone-200 p-2 w-full items-center mr-5 rounded-full  ' >
       <HiMiniMagnifyingGlass />
         <input type='text' className='bg-transparent outline-none ' />
         <div>
