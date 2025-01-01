@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './Pages/Home'
 import Header from './Componenets/Header'
+import { ThemeContext } from '../Context/ThemeContext';
+
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [theme, setTheme] = useState('dark');
+  
+  const [theme, setTheme] = useState('light');
 
   return (
-    <div className={`${theme} ${theme == 'dark' ? 'bg-[#121212]' : null}`}>
+    <ThemeContext.Provider value={{theme,setTheme}} >
+    <div className={`${theme} ${theme == 'dark' ? 'bg-[#121212]' : null} h-[100vh]`}>
       <Home />
       <Header />
+      
     </div>
+    </ThemeContext.Provider>
   );
 }
 
