@@ -18,7 +18,7 @@ function Header() {
         <input
           type="text"
           placeholder="Search Games"
-          className="bg-transparent outline-none px-2 "
+          className="bg-transparent dark:bg-cyan-500  outline-none px-2 "
           
         />
       </div>
