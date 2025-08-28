@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/ai.css">
+</head>
+<body class="min-h-screen flex items-center justify-center relative">
+    <!-- Grid Background -->
+    <div id="gridContainer" class="grid-container"></div>
+
+    <!-- Floating Particles -->
+    <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
+    
+    <!-- Logo Section -->
+    <div id="logoSection" class="text-center">
+        <div class="relative flex items-center justify-center mb-8">
+            <div class="pulse-ring w-80 h-80"></div>
+            <div class="pulse-ring w-96 h-96" style="animation-delay: 0.5s;"></div>
+            <div id="mainLogo" class="logo-container cursor-pointer relative">
+                <img class="customimage floating hover:scale-105 transition-transform duration-300" src="/logo.png" alt="AIM Logo">
+            </div>
+        </div>
+        <h1 class="text-4xl font-bold text-white mb-4" style="font-family: 'Orbitron', sans-serif;">AIM</h1>
+        <p class="text-xl text-gray-300">Association of Intelligent Minds</p>
+    </div>
+
+    <!-- AI Assistant Container -->
+    <div id="aiContainer" class="ai-container">
+        <!-- Background Video --> 
+        <video autoplay muted loop class="background-video">
+            <source src="/back5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- <div class="always-listening-indicator">
+            <div class="listening-dot"></div>
+            Always Listening
+        </div> -->
+
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="text-center mb-8">
+                <h2 class="aim text-3xl font-bold text-white mb-2">AIM Invitation</h2>
+                <img class="customimageone" src="/logo.png" alt="AIM Logo">
+            </div>
+
+            <div id="responseDisplay" class="response-display">
+                <p>🎤 Association of Intelligent Minds</p>
+            </div>
+
+            <div id="invitationDisplay" class="invitation-display" style="display: none;">
+                <div class="invitation-card" onclick="openImageModal()">
+                    <h3 class="text-2xl font-bold mb-4">🎉 Invitation</h3>
+                    <p class="mb-2">We warmly welcome</p>
+                    <p class="text-xl font-bold mb-2">Dr. C. Mathalai Sundaram</p>
+                    <p>to our Association Function</p>
+                    <p class="mt-4">It is our honor to have you with us today!</p>
+                    <p class="mt-4 text-sm opacity-75">Click to view full size</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeImageModal()">×</button>
+            <img class="modal-image" src="/final.png" alt="Full Size Invitation" onerror="this.src='/logo.png'">
+        </div>
+    </div>
+    <script src="/ai.js"></script>
+</body>
+</html>

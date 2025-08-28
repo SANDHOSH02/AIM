@@ -1,0 +1,71 @@
+{
+    "invitations": [
+      {
+        "role": "Principal",
+        "text": "We respectfully invite our respected Principal, Dr. C. Mathalai Sundaram Sir, to our Department Association Function. It is our honor to have you with us, Sir."
+      },
+      {
+        "role": "Vice Principal",
+        "text": "We take immense pleasure in inviting our Vice Principal, Dr. Sathiya Sir, to this function."
+      },
+      {
+        "role": "Vice Principal",
+        "text": "With great respect, we invite our Vice Principal, Mr. Madhavan Sir, to our Department Association Function."
+      },
+      {
+        "role": "Secretary",
+        "text": "We sincerely invite our Secretary, R. A. S. S. S. Somasundaram Sir, to be part of this occasion."
+      },
+      {
+        "role": "Joint Secretary",
+        "text": "It is our privilege to invite our Joint Secretary, Mr. T. Subramani Sir, to this Association Function."
+      },
+      {
+        "role": "HOD - Artificial Intelligence",
+        "text": "We are delighted to invite Mr. L. S. Vignesh Sir, Head of Artificial Intelligence, to our Association Function."
+      },
+      {
+        "role": "HOD - Information Technology",
+        "text": "We invite Mr. Arunjothi Sir, Head of Information Technology, to this special occasion."
+      },
+      {
+        "role": "HOD - Computer Science and Engineering",
+        "text": "We take great pride in inviting Dr. J. Mathalai Raj Sir, Head of Computer Science and Engineering, to our Department Association Function."
+      },
+      {
+        "role": "HOD - Mechanical Engineering",
+        "text": "With respect, we invite Mr. Rathakishnan Sir, Head of Mechanical Engineering, to this gathering."
+      },
+      {
+        "role": "HOD - Electronics and Communication Engineering",
+        "text": "We cordially invite Dr. T. Venishkumar Sir, Head of Electronics and Communication Engineering, to our Association Function."
+      },
+      {
+        "role": "HOD - Electrical and Electronics Engineering",
+        "text": "We invite Dr. J. Mathalai Raj Sir, Head of Electrical and Electronics Engineering, to this function."
+      },
+      {
+        "role": "HOD - Civil Engineering",
+        "text": "We respectfully invite Mr. S. Sir, Head of Civil Engineering, to our Association Function."
+      },
+      {
+        "role": "HOD - Science and Humanities",
+        "text": "Finally, we invite Mr. I. Sir, Head of Science and Humanities, to our Department Association Function."
+      },
+
+      {
+        "event": {
+        "name": "AIM Association Function",
+        "date": "30/08/2025",
+        "place": "College Auditorium"
+  }
+
+      }
+      
+    ]
+
+    
+  }
+  
+
+  
