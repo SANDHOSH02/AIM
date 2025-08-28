@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIM</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/ai.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body class="min-h-screen flex items-center justify-center relative">
     <!-- Grid Background -->
@@ -20,7 +20,7 @@
             <div class="pulse-ring w-80 h-80"></div>
             <div class="pulse-ring w-96 h-96" style="animation-delay: 0.5s;"></div>
             <div id="mainLogo" class="logo-container cursor-pointer relative">
-                <img class="customimage floating hover:scale-105 transition-transform duration-300" src="/logo.png" alt="AIM Logo">
+                <img class="customimage floating hover:scale-105 transition-transform duration-300" src="/Aim_three/assets/logo.png" alt="AIM Logo">
             </div>
         </div>
         <h1 class="text-4xl font-bold text-white mb-4" style="font-family: 'Orbitron', sans-serif;">AIM</h1>
@@ -31,7 +31,7 @@
     <div id="aiContainer" class="ai-container">
         <!-- Background Video --> 
         <video autoplay muted loop class="background-video">
-            <source src="/back5.mp4" type="video/mp4">
+            <source src="/Aim_three/assets/back5.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -43,7 +43,7 @@
         <div class="container mx-auto px-4 py-8 max-w-4xl">
             <div class="text-center mb-8">
                 <h2 class="aim text-3xl font-bold text-white mb-2">AIM Invitation</h2>
-                <img class="customimageone" src="/logo.png" alt="AIM Logo">
+                <img class="customimageone" src="/Aim_three/assets/logo.png" alt="AIM Logo">
             </div>
 
             <div id="responseDisplay" class="response-display">
@@ -67,9 +67,9 @@
     <div id="imageModal" class="image-modal">
         <div class="modal-content">
             <button class="close-modal" onclick="closeImageModal()">×</button>
-            <img class="modal-image" src="/final.png" alt="Full Size Invitation" onerror="this.src='/logo.png'">
+            <img class="modal-image" src="/Aim_three/assets/final.png" alt="Full Size Invitation" onerror="this.src='/logo.png'">
         </div>
     </div>
-    <script src="/ai.js"></script>
+    <script src="/Aim_three/index.js"></script>
 </body>
 </html>
